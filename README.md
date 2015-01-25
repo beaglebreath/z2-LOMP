@@ -24,13 +24,14 @@ http://php.net/manual/en/install.unix.lighttpd-14.php
     
 if i remember correctly i was having trouble ovpkg.  i eventually manually deleted as well 
 as using "ovpkg remove lighttpd" to remove the lighttpd package, then i installed 
-lighttpd-mod-fastcgi.  by installing that package, the dependancy of lighttpd was seen by 
-ovpkg, and lighttpd was then automatically installed.
+lighttpd-mod-fastcgi.  when lighttpd-mod-fastcgi was installed, the dependancy of lighttpd 
+was noticed by ovpkg, and lighttpd was then automatically installed.
 
 ****mysql****
 
-at this time i have mysql installed and working.  i can happily create databases, tables and 
-execute tedious sql statements.  i think i have mysql installed and working correctly.
+this program was installed easily.  at this time i have mysql installed and working.  
+i can happily create databases, tables and execute tedious sql statements.  i think 
+i have mysql installed and working correctly.
 
 ****php5****
 
@@ -49,4 +50,4 @@ and that worked eventually worked.
 
 ****php5-mod-mysqli****
 
-i think this is the last piece of the puzzle.  I have not been able to get this part working.
+i think this is the last piece of the puzzle.  i have not been able to get this part working.
