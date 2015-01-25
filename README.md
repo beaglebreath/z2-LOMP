@@ -10,7 +10,8 @@ the purpose of this project is to give me a set of software which will be integr
     finally i made some silly web pages and looked at them from a browser outside the zipit.
     
     at some point i decided i needed a package called "lighttpd-mod-fastcgi"
-    after installing this package using ovpkg, i further edited lighttpd.conf as instructed on the following site
+    after installing this package using ovpkg, i further edited lighttpd.conf 
+    as instructed on the following site
     
     http://php.net/manual/en/install.unix.lighttpd-14.php
     
