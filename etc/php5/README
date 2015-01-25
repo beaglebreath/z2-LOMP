@@ -1,0 +1,10 @@
+if i execute the following command;
+
+ find // -name 'mysqli.so'
+ 
+i get the following results;
+
+//usr/lib/mysqli.so
+//usr/lib/php/mysqli.so
+//overlay/usr/lib/mysqli.so
+//overlay/usr/lib/php/mysqli.so
