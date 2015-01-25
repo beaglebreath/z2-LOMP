@@ -1,7 +1,8 @@
 # z2-LOMP
 this is my attempt to get a LOMP stack (lighttpd, openwrt, mysql, php5) working on a zipit z2.
 
-the purpose of this project is to give me a set of software which will be integrated with additinal smal programs which interact with sensors and circuits attached to the zipit's docking connector.  
+the purpose of this project is to give me a set of software which will be integrated with additional
+small programs which interact with sensors and circuits attached to the zipit's docking connector.  
 
 *lighttpd
     at this time i have lighttpd web-server installed and running on the zipit.  
