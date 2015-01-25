@@ -58,3 +58,5 @@ and that worked eventually worked.
 ****php5-mod-mysqli****
 
 i think this is the last piece of the puzzle.  i have not been able to get this part working.
+
+i have installed "ovpkg install
