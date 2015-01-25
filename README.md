@@ -24,11 +24,11 @@ ovpkg, and lighttpd was then automatically installed.
 ****mysql****
 at this time i have mysql installed and working.  i can happily create databases, tables and 
 execute tedious sql statements.  i think i have mysql installed and working correctly.
-*php5
-    installing this took some trial and error.  i think that my zipit is doing something strange 
-    with files which are installed from ovpkg.  it seems like i need to edit files at the location 
-    //overlay/path/to/file 
-    rather than //path/to/file.  I'll come back a address this later.
-    
-    anyway, i ultimately wanted to install php5-fastcgi, so i did so without worring about installing 
-    php5 itself. as with the lighttpd; php5 was installed as well as the php5-fastcgi.
+
+****php5****
+installing this took some trial and error just like installing lighttpd.  i think that my 
+zipit is doing something strange with files which are installed from ovpkg.  it seems 
+like i need to edit files at the location //overlay/path/to/file rather than //path/to/file.
+I'll come back a address this later. anyway, i ultimately wanted to install php5-fastcgi,
+so i did so without worring about installing php5 itself. as with the lighttpd; php5 was 
+installed as well as the php5-fastcgi.
