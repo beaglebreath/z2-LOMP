@@ -59,4 +59,6 @@ and that worked eventually worked.
 
 i think this is the last piece of the puzzle.  i have not been able to get this part working.
 
-i have installed "ovpkg install
+i have installed "ovpkg install php5-mod-mysqli".
+
+i think there is something weird happening when I install this.  it seems like i suddenly had problems with lighttpd loading.  the lighttpd.conf seems to have been changed and the 
