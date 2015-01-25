@@ -5,10 +5,10 @@ the following describes some of the problems i encountered installing software. 
 everything is working now, except for the connection between php and mysql.  at the bottom of 
 this description, i'll show what i'm befuddled with at this time.
 
-the purpose of this project is to give me a set of software which will be integrated with 
-additional small programs which interact with sensors and circuits attached to the zipit's 
-docking connector.  i hope to eventually be able to have a webserver providing a page
-where my circuit's output is accessible from a browser.
+the purpose of this project is to setup a software stack which will be integrated with 
+additional programs i've written which interact with electronic sensors and circuits 
+attached to the zipit's docking connector.  i hope to eventually be able to have a 
+webserver providing a pagewhere my circuit's output is accessible from a browser.
 (i.e. a temperature sensor showing the current temperature)
 i'd like php commands embedded in an html page to control the execution of my sensor program.
 additionally, i'd like to be able to use a database for the storage of calibration data of
