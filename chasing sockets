@@ -1,13 +1,13 @@
 okay the php.ini file was given another look over.
 
-i deleted the copy at /overlay/etc/php.ini and began editing /etc/php.ini
+I deleted the copy at /overlay/etc/php.ini and began editing /etc/php.ini
 
 these are the changes;
 line 177 is not commented and is changed to mysqli.so
 under the Module Settings section;
 the block of settings which begins with [MySQL]
 (lines 228 through 240) were copied and inserted immediately after line 240.
-in the inserted block i changed all "mysql" to "mysqli"
+in the inserted block I changed all "mysql" to "mysqli"
 
 like this;
 
@@ -29,3 +29,34 @@ the /tmp/php.socket-0 file is giving me grief.  the setting show is the
 first time i've had an error from a browser that reads;
 
 Warning: mysqli_connect() [function.mysqli-connect]: (HY000/2013): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 in /www/index.php on line 10
+
+
+after rebooting, I ran 
+mysqld &
+  
+150125 23:28:15 [Note] Event Scheduler: Loaded 0 events
+150125 23:28:15 [Note] mysqld: ready for connections.
+Version: '5.1.53'  socket: '/var/run/mysqld.sock'  port: 3306  Source distribution
+
+then I ran
+lighttpd -f /etc/lighttpd/lighttpd.conf
+
+then I look at /tmp/ and see this 
+ls -al /tmp/php*
+srwxr-xr-x    1 root     root             0 Jan 25 22:48 /tmp/php.socket-0
+srwxr-xr-x    1 root     root             0 Jan 25 22:48 /tmp/php.socket-1
+srwxr-xr-x    1 root     root             0 Jan 25 22:48 /tmp/php.socket-2
+srwxr-xr-x    1 root     root             0 Jan 25 22:48 /tmp/php.socket-3
+
+and I ran ps | grep php
+ ps | grep php
+ 2213 root      5972 S    /usr/bin/php-cgi
+ 2214 root      5972 S    /usr/bin/php-cgi
+ 2215 root      5972 S    /usr/bin/php-cgi
+ 2216 root      5972 S    /usr/bin/php-cgi
+ 2217 root      5972 S    /usr/bin/php-cgi
+ 2218 root      5972 S    /usr/bin/php-cgi
+ 2219 root      5972 S    /usr/bin/php-cgi
+ 2220 root      5972 S    /usr/bin/php-cgi
+ 
+ 
