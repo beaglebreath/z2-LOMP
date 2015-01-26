@@ -1,0 +1,31 @@
+okay the php.ini file was given another look over.
+
+i deleted the copy at /overlay/etc/php.ini and began editing /etc/php.ini
+
+these are the changes;
+line 177 is not commented and is changed to mysqli.so
+under the Module Settings section;
+the block of settings which begins with [MySQL]
+(lines 228 through 240) were copied and inserted immediately after line 240.
+in the inserted block i changed all "mysql" to "mysqli"
+
+like this;
+
+[MySQLi]
+mysqli.allow_local_infile = On
+mysqli.allow_persistent = On
+mysqli.cache_size = 2000
+mysqli.max_persistent = -1
+mysqli.max_links = -1
+mysqli.default_port = 3306
+mysqli.default_socket = /tmp/php.socket-0
+mysqli.default_host = localhost
+mysqli.default_user = ""
+mysqli.default_password = ""
+mysqli.connect_timeout = 60
+mysqli.trace_mode = Off
+
+the /tmp/php.socket-0 file is giving me grief.  the setting show is the 
+first time i've had an error from a browser that reads;
+
+Warning: mysqli_connect() [function.mysqli-connect]: (HY000/2013): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 in /www/index.php on line 10
