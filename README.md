@@ -7,7 +7,7 @@ the following describes some of the problems i encountered installing software. 
 everything is working now, except for the connection between php and mysql.  at the bottom of 
 this description, i'll show what i'm befuddled with at this time.
 
-i have completed these steps on a kali-linux pc (except i used apache instead of lighttpd).
+i have duplicated these steps on a kali-linux pc (except i used apache instead of lighttpd).
 everthing is working wonderfully from the pc.
 
 the purpose of this project is to setup a software stack which will be integrated with 
