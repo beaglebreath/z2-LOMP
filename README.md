@@ -69,3 +69,8 @@ regarding the error.log. it seems like the new location i typed in //etc/lighttp
 line 32 keeps changing.  also the actual file and directory get deleted between bootups.
 I recently changed the file location to //www/
 
+i also tried this, and it seems to imply that mysqli is installed.
+
+<?php print_r(get_loaded_extensions()); ?>
+
+Array ( [0] => Core [1] => date [2] => ereg [3] => libxml [4] => pcre [5] => zlib [6] => posix [7] => Reflection [8] => SPL [9] => standard [10] => cgi-fcgi [11] => mysqli ) 
