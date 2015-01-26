@@ -61,4 +61,9 @@ i think this is the last piece of the puzzle.  i have not been able to get this 
 
 i have installed "ovpkg install php5-mod-mysqli".
 
-i think there is something weird happening when I install this.  it seems like i suddenly had problems with lighttpd loading.  the lighttpd.conf seems to have been changed and the 
+i think there is something weird happening when I install this.  it seems like i suddenly had 
+problems with lighttpd loading.  the lighttpd.conf seems to have been changed and the line 
+regarding the error.log. it seems like the new location i typed in //etc/lighttpd/lighttpd.conf
+line 32 keeps changing.  also the actual file and directory get deleted between bootups.
+I recently changed the file location to //www/
+
