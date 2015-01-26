@@ -1,5 +1,7 @@
 # z2-LOMP
 this is my attempt to get a LOMP stack (lighttpd, openwrt, mysql, php5) working on a zipit z2.
+i actually wanted a LAMP stack, but i was having problems with apache.  i switched over to 
+lighttpd, and my LAMP acronym no longer worked.  hence LOMP...
 
 the following describes some of the problems i encountered installing software.  i think
 everything is working now, except for the connection between php and mysql.  at the bottom of 
